@@ -19,7 +19,7 @@ const countLetters = function(allLetters, lettersToCount) {
     }
   }
   return results;
-}
+};
 
 const firstString = "lighthouse in the house";
 
@@ -28,8 +28,6 @@ const result1 = countLetters(firstString, {
   "a": true,
   "e": true
 });
-
-console.log(result1["l"])
 
 assertEqual(result1["l"], 1);
 assertEqual(result1["a"], undefined);
