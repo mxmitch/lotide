@@ -18,6 +18,7 @@ console.log(results2);
 const results3 = map(words, word => word + word);
 console.log(results3);
 
+//Function to test if arrays are equal
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -36,6 +37,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
+//Function to assert if arrays are equal
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
