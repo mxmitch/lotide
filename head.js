@@ -1,8 +1,5 @@
-const _ = require('lodash');
-
-// FUNCTION IMPLEMENTATION
 const head = function(myArray) {
-  return _.head(myArray);
+  return myArray[0];
 };
 
 module.exports = head;

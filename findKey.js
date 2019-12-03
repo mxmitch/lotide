@@ -1,7 +1,7 @@
 const findKey = function(obj, callback) {
   let result = '';
   for (const property in obj) {
-    if (callback(obj[property]) == true) {
+    if (callback(obj[property]) === true) {
       result = property;
       break;
     }
@@ -10,7 +10,7 @@ const findKey = function(obj, callback) {
     return undefined;
   }
   return result;
-}
+};
 
 
 console.log(findKey({
@@ -32,7 +32,7 @@ console.log(findKey({
   "Akelarre": {
     stars: 3
   }
-}, x => x.stars === 2)) // => "noma"
+}, x => x.stars === 2)); // => "noma"
 
 
 //Funciton to assert if arrays are equal

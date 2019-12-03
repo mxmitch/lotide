@@ -6,7 +6,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 //TESTING MAP
 const results1 = map(words, word => word[0]);
@@ -25,12 +25,12 @@ const eqArrays = function(array1, array2) {
   } else {
     for (let i = 0; i < array1.length; i++) {
       if (typeof array1[i] !== typeof array2[i]) {
-        return false
+        return false;
       }
     }
     for (let i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
-        return false
+        return false;
       }
     }
     return true;

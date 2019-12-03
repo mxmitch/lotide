@@ -1,8 +1,9 @@
-const _ = require('lodash');
-
-// FUNCTION IMPLEMENTATION
 const tail = function(myArray) {
-  return _.tail(myArray);
+  let result = [];
+  for (let i = 1; i < myArray.length; i++) {
+    result.push(myArray[i]);
+  }
+  return result;
 };
 
 module.exports = tail;

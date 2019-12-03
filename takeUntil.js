@@ -7,7 +7,7 @@ const takeUntil = function(array, callback) {
       return results;
   }
   return results;
-}
+};
 
 //Testing takeUntil function
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
@@ -27,12 +27,12 @@ const eqArrays = function(array1, array2) {
   } else {
     for (let i = 0; i < array1.length; i++) {
       if (typeof array1[i] !== typeof array2[i]) {
-        return false
+        return false;
       }
     }
     for (let i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
-        return false
+        return false;
       }
     }
     return true;
